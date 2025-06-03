@@ -1,0 +1,111 @@
+const EINLAGEN_DATEN = [
+  {
+    "ID": "001",
+    "befund": "Senkfuß",
+    "massnahme": "Längsgewölbestütze",
+    "hmv": "08.03.02.2",
+    "icd10": "M21.64",
+    "einlage_typ": "Stütze",
+    "vorrang": 2
+  },
+  {
+    "ID": "002",
+    "befund": "Spreizfuß",
+    "massnahme": "Pelotte zur Stützung des Quergewölbes",
+    "hmv": "08.03.02.2",
+    "icd10": "M21.67",
+    "einlage_typ": "Stütze",
+    "vorrang": 3
+  },
+  {
+    "ID": "003",
+    "befund": "Hallux valgus",
+    "massnahme": "Großzehenkorrekturkeil",
+    "hmv": "08.03.02.2",
+    "icd10": "M20.1",
+    "einlage_typ": "Stütze",
+    "vorrang": 1
+  },
+  {
+    "ID": "004",
+    "befund": "Fersensporn",
+    "massnahme": "Fersenspornaussparung, Weichbettung",
+    "hmv": "08.03.02.1",
+    "icd10": "M77.4",
+    "einlage_typ": "Weichbettung",
+    "vorrang": 3
+  },
+  {
+    "ID": "005",
+    "befund": "Metatarsalgie",
+    "massnahme": "Retrokapital-Pelotte, Weichbettung",
+    "hmv": "08.03.02.1",
+    "icd10": "M77.4",
+    "einlage_typ": "Weichbettung",
+    "vorrang": 2
+  },
+  {
+    "ID": "006",
+    "befund": "Hammerzehe",
+    "massnahme": "Zehenaussparung, Zehenpolster",
+    "hmv": "08.03.02.1",
+    "icd10": "M20.4",
+    "einlage_typ": "Weichbettung",
+    "vorrang": 1
+  },
+  {
+    "ID": "007",
+    "befund": "Pes equinus",
+    "massnahme": "Schalensystem, Fersenkeil",
+    "hmv": "08.03.02.3",
+    "icd10": "M21.62",
+    "einlage_typ": "Schale",
+    "vorrang": 5
+  },
+  {
+    "ID": "008",
+    "befund": "Pes planus",
+    "massnahme": "Schalensystem mit verstärkter Gewölbestütze",
+    "hmv": "08.03.02.3",
+    "icd10": "M21.4",
+    "einlage_typ": "Schale",
+    "vorrang": 4
+  },
+  {
+    "ID": "009",
+    "befund": "Rheumatischer Fuß",
+    "massnahme": "Weichbettung, Polsterung der Belastungszonen",
+    "hmv": "08.03.02.4",
+    "icd10": "M06.87",
+    "einlage_typ": "Weichpolster",
+    "vorrang": 5
+  },
+  {
+    "ID": "010",
+    "befund": "Diabetisches Fußsyndrom",
+    "massnahme": "Druckverteilende Weichpolsterung, Entlastung der Prädilektionsstellen",
+    "hmv": "08.03.02.4",
+    "icd10": "E10.74",
+    "einlage_typ": "Weichpolster",
+    "vorrang": 6
+  },
+  {
+    "ID": "011",
+    "befund": "Hohlfuß",
+    "massnahme": "Supinationsausgleich, Pufferung",
+    "hmv": "08.03.02.3",
+    "icd10": "M21.63",
+    "einlage_typ": "Schale",
+    "vorrang": 3
+  },
+  {
+    "ID": "012",
+    "befund": "Knickfuß",
+    "massnahme": "Pronationsstütze, laterale Fersenfassung",
+    "hmv": "08.03.02.3",
+    "icd10": "M21.0",
+    "einlage_typ": "Schale",
+    "vorrang": 2
+  }
+];
+

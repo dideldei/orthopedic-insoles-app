@@ -1,0 +1,223 @@
+/* Base Styles */
+:root {
+    --primary-color: #1a73e8;
+    --secondary-color: #f0f4f8;
+    --accent-color: #4caf50;
+    --text-color: #333;
+    --light-text: #666;
+    --border-color: #ddd;
+    --highlight-color: #e6f4ea;
+    --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: #f9f9f9;
+}
+
+/* Header Styles */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    gap: 2rem;
+}
+
+/* Section Styles */
+section {
+    background: white;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+    padding: 1.5rem;
+}
+
+section h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+section h3 {
+    color: var(--light-text);
+    margin: 1.5rem 0 0.5rem 0;
+    font-size: 1.2rem;
+}
+
+.findings-section {
+    flex: 1;
+    min-width: 300px;
+}
+
+.preview-section {
+    flex: 2;
+    min-width: 400px;
+}
+
+/* Findings List */
+.findings-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-height: 70vh;
+    overflow-y: auto;
+    padding-right: 1rem;
+}
+
+.finding-item {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.finding-item:hover {
+    background-color: var(--secondary-color);
+}
+
+.finding-item input[type="checkbox"] {
+    margin-right: 0.75rem;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.finding-item label {
+    cursor: pointer;
+    font-weight: 500;
+    flex-grow: 1;
+}
+
+/* Preview Sections */
+.preview-diagnoses, 
+.preview-insoles, 
+.preview-requirements {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.preview-diagnoses:last-child, 
+.preview-insoles:last-child, 
+.preview-requirements:last-child {
+    border-bottom: none;
+}
+
+.diagnosis-item, 
+.insole-item, 
+.requirement-item {
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+    background-color: var(--secondary-color);
+}
+
+.diagnosis-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icd-code {
+    font-weight: bold;
+    margin-right: 1rem;
+    color: var(--primary-color);
+}
+
+.insole-item {
+    background-color: var(--highlight-color);
+    border-left: 4px solid var(--accent-color);
+    position: relative;
+    padding-right: 45px; /* Make room for priority badge */
+}
+
+.insole-item::after {
+    content: "Priorität " attr(data-priority);
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: var(--accent-color);
+    color: white;
+    border-radius: 12px;
+    padding: 2px 8px;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.hmv-code {
+    font-weight: bold;
+    color: var(--accent-color);
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.insole-type {
+    font-weight: 500;
+    display: block;
+}
+
+.insole-source {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--light-text);
+    margin-top: 0.25rem;
+}
+
+.empty-message {
+    color: var(--light-text);
+    font-style: italic;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    background-color: var(--secondary-color);
+    color: var(--light-text);
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .findings-section, 
+    .preview-section {
+        width: 100%;
+    }
+    
+    .findings-list {
+        max-height: 50vh;
+    }
+}
+

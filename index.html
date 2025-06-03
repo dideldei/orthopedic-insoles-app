@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Einlagenversorgung für orthopädische Befunde">
+    <title>Orthopädische Einlagenversorgung</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Orthopädische Einlagenversorgung</h1>
+        <p>Unterstützung für Ärzt:innen bei der Zusammenstellung passender Einlagenversorgungen</p>
+    </header>
+
+    <main class="container">
+        <section class="findings-section">
+            <h2>Orthopädische Befunde</h2>
+            <p>Wählen Sie die zutreffenden Befunde aus:</p>
+            <div class="findings-list" id="findings-list">
+                <!-- Befunde werden dynamisch per JavaScript hinzugefügt -->
+            </div>
+        </section>
+
+        <section class="preview-section">
+            <h2>Versorgungsvorschau</h2>
+            
+            <div class="preview-diagnoses">
+                <h3>Diagnosen</h3>
+                <div id="diagnoses-list">
+                    <p class="empty-message">Keine Befunde ausgewählt</p>
+                </div>
+            </div>
+            
+            <div class="preview-insoles">
+                <h3>Einlagenversorgung</h3>
+                <div id="insoles-list">
+                    <p class="empty-message">Keine Einlagen ausgewählt</p>
+                </div>
+            </div>
+            
+            <div class="preview-requirements">
+                <h3>Orthopädietechnische Erfordernisse</h3>
+                <div id="requirements-list">
+                    <p class="empty-message">Keine Erfordernisse definiert</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Orthopädische Einlagenversorgung</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="einlagen.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
+
