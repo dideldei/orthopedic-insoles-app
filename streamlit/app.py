@@ -10,7 +10,10 @@ def load_js_data(js_path):
     array_str = re.sub(r";\s*$", "", array_str)
     return json.loads(array_str)
 
-EINLAGEN_DATEN = load_js_data("../einlagen.js")
+try:
+    EINLAGEN_DATEN = load_js_data("../einlagen.js")
+except FileNotFoundError:
+    EINLAGEN_DATEN = load_js_data("einlagen.js")
 
 st.set_page_config(page_title="Orthopädische Einlagenversorgung", layout="centered")
 
